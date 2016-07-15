@@ -9,23 +9,44 @@
 /* Begin PBXBuildFile section */
 		842285D51D380EE100E88C36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 842285D41D380EE100E88C36 /* main.m */; };
 		842285D81D380EE100E88C36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 842285D71D380EE100E88C36 /* AppDelegate.m */; };
-		842285DB1D380EE100E88C36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842285DA1D380EE100E88C36 /* ViewController.m */; };
 		842285DE1D380EE100E88C36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842285DC1D380EE100E88C36 /* Main.storyboard */; };
 		842285E01D380EE100E88C36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842285DF1D380EE100E88C36 /* Assets.xcassets */; };
 		842285E31D380EE100E88C36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842285E11D380EE100E88C36 /* LaunchScreen.storyboard */; };
+		842285FE1D3830BD00E88C36 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842285FD1D3830BD00E88C36 /* LeftMenuViewController.m */; };
+		842286011D3830D700E88C36 /* RightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842286001D3830D700E88C36 /* RightMenuViewController.m */; };
+		842286041D38310E00E88C36 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842286031D38310E00E88C36 /* MapViewController.m */; };
+		842286091D3837EF00E88C36 /* animation.png in Resources */ = {isa = PBXBuildFile; fileRef = 842286051D3837EF00E88C36 /* animation.png */; };
+		8422860B1D3837EF00E88C36 /* leftMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842286071D3837EF00E88C36 /* leftMenu.jpg */; };
+		8422860C1D3837EF00E88C36 /* rightMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842286081D3837EF00E88C36 /* rightMenu.jpg */; };
+		84B911811D38A659007FC071 /* menu-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84B911801D38A659007FC071 /* menu-icon.jpg */; };
+		84B911841D38A8E3007FC071 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B911831D38A8E3007FC071 /* MainViewController.m */; };
+		8F0D59C54E8DA428175B3468 /* Pods_iOSSlideMenuTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E985BC8A8E6F91151CE1B701 /* Pods_iOSSlideMenuTestTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		739BC50E1EAFB2DA0FBB04A5 /* Pods-iOSSlideMenuTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSlideMenuTestTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSSlideMenuTestTask/Pods-iOSSlideMenuTestTask.release.xcconfig"; sourceTree = "<group>"; };
 		842285D01D380EE000E88C36 /* iOSSlideMenuTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSlideMenuTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842285D41D380EE100E88C36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		842285D61D380EE100E88C36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		842285D71D380EE100E88C36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		842285D91D380EE100E88C36 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		842285DA1D380EE100E88C36 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		842285DD1D380EE100E88C36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		842285DF1D380EE100E88C36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842285E21D380EE100E88C36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842285E41D380EE100E88C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		842285FC1D3830BD00E88C36 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		842285FD1D3830BD00E88C36 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		842285FF1D3830D700E88C36 /* RightMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightMenuViewController.h; sourceTree = "<group>"; };
+		842286001D3830D700E88C36 /* RightMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightMenuViewController.m; sourceTree = "<group>"; };
+		842286021D38310E00E88C36 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		842286031D38310E00E88C36 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		842286051D3837EF00E88C36 /* animation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = animation.png; path = "../../../Downloads/iOS-Slide-Menu-master/SlideMenu/Images/animation.png"; sourceTree = "<group>"; };
+		842286071D3837EF00E88C36 /* leftMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = leftMenu.jpg; path = "../../../Downloads/iOS-Slide-Menu-master/SlideMenu/Images/leftMenu.jpg"; sourceTree = "<group>"; };
+		842286081D3837EF00E88C36 /* rightMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rightMenu.jpg; path = "../../../Downloads/iOS-Slide-Menu-master/SlideMenu/Images/rightMenu.jpg"; sourceTree = "<group>"; };
+		84B911801D38A659007FC071 /* menu-icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "menu-icon.jpg"; path = "../../../Downloads/menu-icon.jpg"; sourceTree = "<group>"; };
+		84B911821D38A8E3007FC071 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		84B911831D38A8E3007FC071 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C8267F323C9664DC632317C3 /* Pods-iOSSlideMenuTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSlideMenuTestTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSSlideMenuTestTask/Pods-iOSSlideMenuTestTask.debug.xcconfig"; sourceTree = "<group>"; };
+		E985BC8A8E6F91151CE1B701 /* Pods_iOSSlideMenuTestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSSlideMenuTestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0D59C54E8DA428175B3468 /* Pods_iOSSlideMenuTestTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +66,8 @@
 			children = (
 				842285D21D380EE100E88C36 /* iOSSlideMenuTestTask */,
 				842285D11D380EE000E88C36 /* Products */,
+				D238C9DBFFFC8B9EE56C2D4D /* Pods */,
+				89CC0F35B7AF96CBFC33C48F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,13 +84,19 @@
 			children = (
 				842285D61D380EE100E88C36 /* AppDelegate.h */,
 				842285D71D380EE100E88C36 /* AppDelegate.m */,
-				842285D91D380EE100E88C36 /* ViewController.h */,
-				842285DA1D380EE100E88C36 /* ViewController.m */,
 				842285DC1D380EE100E88C36 /* Main.storyboard */,
 				842285DF1D380EE100E88C36 /* Assets.xcassets */,
 				842285E11D380EE100E88C36 /* LaunchScreen.storyboard */,
 				842285E41D380EE100E88C36 /* Info.plist */,
 				842285D31D380EE100E88C36 /* Supporting Files */,
+				842285FC1D3830BD00E88C36 /* LeftMenuViewController.h */,
+				842285FD1D3830BD00E88C36 /* LeftMenuViewController.m */,
+				842285FF1D3830D700E88C36 /* RightMenuViewController.h */,
+				842286001D3830D700E88C36 /* RightMenuViewController.m */,
+				842286021D38310E00E88C36 /* MapViewController.h */,
+				842286031D38310E00E88C36 /* MapViewController.m */,
+				84B911821D38A8E3007FC071 /* MainViewController.h */,
+				84B911831D38A8E3007FC071 /* MainViewController.m */,
 			);
 			path = iOSSlideMenuTestTask;
 			sourceTree = "<group>";
@@ -74,9 +104,30 @@
 		842285D31D380EE100E88C36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84B911801D38A659007FC071 /* menu-icon.jpg */,
+				842286051D3837EF00E88C36 /* animation.png */,
+				842286071D3837EF00E88C36 /* leftMenu.jpg */,
+				842286081D3837EF00E88C36 /* rightMenu.jpg */,
 				842285D41D380EE100E88C36 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89CC0F35B7AF96CBFC33C48F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E985BC8A8E6F91151CE1B701 /* Pods_iOSSlideMenuTestTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D238C9DBFFFC8B9EE56C2D4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8267F323C9664DC632317C3 /* Pods-iOSSlideMenuTestTask.debug.xcconfig */,
+				739BC50E1EAFB2DA0FBB04A5 /* Pods-iOSSlideMenuTestTask.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 842285E71D380EE100E88C36 /* Build configuration list for PBXNativeTarget "iOSSlideMenuTestTask" */;
 			buildPhases = (
+				192CCF0BA2FDE525806B06AF /* [CP] Check Pods Manifest.lock */,
 				842285CC1D380EE000E88C36 /* Sources */,
 				842285CD1D380EE000E88C36 /* Frameworks */,
 				842285CE1D380EE000E88C36 /* Resources */,
+				CB5B2536ABF3F1397AFCC47E /* [CP] Embed Pods Frameworks */,
+				C28068F44170C2D872540F3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,19 +193,74 @@
 			files = (
 				842285E31D380EE100E88C36 /* LaunchScreen.storyboard in Resources */,
 				842285E01D380EE100E88C36 /* Assets.xcassets in Resources */,
+				842286091D3837EF00E88C36 /* animation.png in Resources */,
+				8422860B1D3837EF00E88C36 /* leftMenu.jpg in Resources */,
 				842285DE1D380EE100E88C36 /* Main.storyboard in Resources */,
+				84B911811D38A659007FC071 /* menu-icon.jpg in Resources */,
+				8422860C1D3837EF00E88C36 /* rightMenu.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		192CCF0BA2FDE525806B06AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C28068F44170C2D872540F3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSSlideMenuTestTask/Pods-iOSSlideMenuTestTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB5B2536ABF3F1397AFCC47E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSSlideMenuTestTask/Pods-iOSSlideMenuTestTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		842285CC1D380EE000E88C36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				842285DB1D380EE100E88C36 /* ViewController.m in Sources */,
 				842285D81D380EE100E88C36 /* AppDelegate.m in Sources */,
+				84B911841D38A8E3007FC071 /* MainViewController.m in Sources */,
+				842285FE1D3830BD00E88C36 /* LeftMenuViewController.m in Sources */,
+				842286041D38310E00E88C36 /* MapViewController.m in Sources */,
+				842286011D3830D700E88C36 /* RightMenuViewController.m in Sources */,
 				842285D51D380EE100E88C36 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +373,7 @@
 		};
 		842285E81D380EE100E88C36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8267F323C9664DC632317C3 /* Pods-iOSSlideMenuTestTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSSlideMenuTestTask/Info.plist;
@@ -275,6 +385,7 @@
 		};
 		842285E91D380EE100E88C36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 739BC50E1EAFB2DA0FBB04A5 /* Pods-iOSSlideMenuTestTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSSlideMenuTestTask/Info.plist;
@@ -303,6 +414,7 @@
 				842285E91D380EE100E88C36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

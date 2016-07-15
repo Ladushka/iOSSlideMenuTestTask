@@ -16,7 +16,52 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                             bundle: nil];
+  
+    
+    LeftMenuViewController *leftMenu = (LeftMenuViewController*)[mainStoryboard
+                                                                 instantiateViewControllerWithIdentifier: @"LeftMenuViewController"];
+    
+    RightMenuViewController *rightMenu = (RightMenuViewController*)[mainStoryboard
+                                                                    instantiateViewControllerWithIdentifier: @"RightMenuViewController"];
+    
+    [SlideNavigationController sharedInstance].rightMenu = rightMenu;
+    [SlideNavigationController sharedInstance].leftMenu = leftMenu;
+    [SlideNavigationController sharedInstance].menuRevealAnimationDuration = .18;
+    
+    // Creating a custom bar button for right menu
+    UIButton *_button  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [_button setImage:[UIImage imageNamed:@"menu-icon.jpg"] forState:UIControlStateNormal];
+    [_button addTarget:[SlideNavigationController sharedInstance] action:@selector(toggleRightMenu) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *_rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_button];
+    [SlideNavigationController sharedInstance].rightBarButtonItem = _rightBarButtonItem;
+    
+    UIButton *_buttonL  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [_buttonL setImage:[UIImage imageNamed:@"menu-icon.jpg"] forState:UIControlStateNormal];
+    
+    [_buttonL addTarget:[SlideNavigationController sharedInstance] action:@selector(toggleLeftMenu) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *_leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_buttonL];
+    [SlideNavigationController sharedInstance].leftBarButtonItem = _leftBarButtonItem;
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidClose object:nil queue:nil usingBlock:^(NSNotification *note) {
+        NSString *menu = note.userInfo[@"menu"];
+        NSLog(@"Closed %@", menu);
+    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidOpen object:nil queue:nil usingBlock:^(NSNotification *note) {
+        NSString *menu = note.userInfo[@"menu"];
+        NSLog(@"Opened %@", menu);
+    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidReveal object:nil queue:nil usingBlock:^(NSNotification *note) {
+        NSString *menu = note.userInfo[@"menu"];
+        NSLog(@"Revealed %@", menu);
+    }];
+   
+    [GMSServices provideAPIKey:@"AIzaSyAIiHIFoOcPz4aR8Zosp5AMjUP-WMNRVcU"];
+    
     return YES;
 }
 
