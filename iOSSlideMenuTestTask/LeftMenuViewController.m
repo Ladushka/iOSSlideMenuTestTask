@@ -40,9 +40,9 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 20)];
-    view.backgroundColor = [UIColor clearColor];
-    return view;
+    UIView *_view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 20)];
+    _view.backgroundColor = [UIColor clearColor];
+    return _view;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -75,7 +75,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+    UIStoryboard *_mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
                                                              bundle: nil];
     
     UIViewController *vc ;
@@ -88,15 +88,15 @@
             return;
             break;
         case 1:
-            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"MapViewController"];
+            vc = [_mainStoryboard instantiateViewControllerWithIdentifier: @"MapViewController"];
             break;
             
         case 2:
-            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"ShemeViewController"];
+            vc = [_mainStoryboard instantiateViewControllerWithIdentifier: @"ShemeViewController"];
             break;
             
         case 3:
-            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"HybridViewController"];
+            vc = [_mainStoryboard instantiateViewControllerWithIdentifier: @"HybridViewController"];
             break;       
     }
     
