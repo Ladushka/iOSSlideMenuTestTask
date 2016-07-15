@@ -1,8 +1,8 @@
 //
-//  MapViewController.h
+//  ShemeViewController.h
 //  iOSSlideMenuTestTask
 //
-//  Created by Admin on 14.07.16.
+//  Created by Admin on 15.07.16.
 //  Copyright © 2016 Admin. All rights reserved.
 //
 
@@ -11,8 +11,6 @@
 
 @import GoogleMaps;
 
-@interface MapViewController : UIViewController  <SlideNavigationControllerDelegate>
-
-
+@interface ShemeViewController : UIViewController
 
 @end

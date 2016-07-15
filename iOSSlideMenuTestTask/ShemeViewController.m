@@ -1,21 +1,20 @@
 //
-//  MapViewController.m
+//  ShemeViewController.m
 //  iOSSlideMenuTestTask
 //
-//  Created by Admin on 14.07.16.
+//  Created by Admin on 15.07.16.
 //  Copyright © 2016 Admin. All rights reserved.
 //
 
-#import "MapViewController.h"
+#import "ShemeViewController.h"
 
-
-
-@interface MapViewController (){
+@interface ShemeViewController (){
     GMSMapView *mapView_;
 }
+
 @end
 
-@implementation MapViewController
+@implementation ShemeViewController
 
 - (BOOL)slideNavigationControllerShouldDisplayLeftMenu
 {
@@ -31,8 +30,8 @@
                                  longitude:30.202229
                                  zoom:8];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-
-    mapView_.mapType = kGMSTypeSatellite;
+    
+    mapView_.mapType = kGMSTypeNormal;
     mapView_.myLocationEnabled = YES;
     self.view = mapView_;
 }

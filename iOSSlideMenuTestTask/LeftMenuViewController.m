@@ -13,9 +13,8 @@
 
 @end
 
-@implementation LeftMenuViewController{
-    NSArray *_maps;
-}
+@implementation LeftMenuViewController
+
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     self.slideOutAnimationEnabled = YES;
@@ -25,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-     _maps=@[@"home",@"satellite",@"sheme",@"hybrid"];
+ 
     
     self.tableView.separatorColor = [UIColor lightGrayColor];
     
@@ -38,14 +37,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
-    return 1;
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 20;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [_maps count];
+    return 4;
 }
 
 
@@ -56,30 +55,76 @@
     return view;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 20;
-}
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+/*- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *cellIdentifier=[_maps objectAtIndex:indexPath.row];
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     return cell;
-}
-
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"satellite"]||
-        [segue.identifier isEqualToString:@"sheme"]||
-        [segue.identifier isEqualToString:@"hybrid"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        MapViewController *destViewController = segue.destinationViewController;
-        destViewController.mapName = [_maps objectAtIndex:indexPath.row];
-        
+}*/
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"leftMenu"];
+    
+    switch (indexPath.row)
+    {
+        case 0:
+            cell.textLabel.text = @"Home";
+            break;
+            
+       case 1:
+            cell.textLabel.text = @"Satellite";
+            
+            break;
+            
+        case 2:
+            cell.textLabel.text = @"Sheme";
+            break;
+            
+        case 3:
+            cell.textLabel.text = @"Hybrid";
+            break;
     }
+    
+    cell.backgroundColor = [UIColor clearColor];
+    
+    return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                             bundle: nil];
+    
+    UIViewController *vc ;
+    
+    switch (indexPath.row)
+    {
+        case 0:
+            [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+            [[SlideNavigationController sharedInstance] popToRootViewControllerAnimated:YES];
+            return;
+            break;
+        case 1:
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"MapViewController"];
+            break;
+            
+        case 2:
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"ShemeViewController"];
+            break;
+            
+        case 3:
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"HybridViewController"];
+            break;
+       
+    }
+    
+    [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc
+                                                             withSlideOutAnimation:self.slideOutAnimationEnabled
+                                                                     andCompletion:nil];
+}
+
+
 
 @end

@@ -1,26 +1,25 @@
 //
-//  MapViewController.m
+//  HybridViewController.m
 //  iOSSlideMenuTestTask
 //
-//  Created by Admin on 14.07.16.
+//  Created by Admin on 15.07.16.
 //  Copyright © 2016 Admin. All rights reserved.
 //
 
-#import "MapViewController.h"
+#import "HybridViewController.h"
 
-
-
-@interface MapViewController (){
+@interface HybridViewController (){
     GMSMapView *mapView_;
 }
 @end
 
-@implementation MapViewController
+@implementation HybridViewController
 
 - (BOOL)slideNavigationControllerShouldDisplayLeftMenu
 {
     return YES;
 }
+
 
 
 - (void)viewDidLoad {
@@ -31,9 +30,10 @@
                                  longitude:30.202229
                                  zoom:8];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-
-    mapView_.mapType = kGMSTypeSatellite;
+    
+    mapView_.mapType = kGMSTypeHybrid;
     mapView_.myLocationEnabled = YES;
     self.view = mapView_;
 }
+
 @end

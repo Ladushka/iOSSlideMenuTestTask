@@ -24,19 +24,13 @@
     LeftMenuViewController *leftMenu = (LeftMenuViewController*)[mainStoryboard
                                                                  instantiateViewControllerWithIdentifier: @"LeftMenuViewController"];
     
-    RightMenuViewController *rightMenu = (RightMenuViewController*)[mainStoryboard
-                                                                    instantiateViewControllerWithIdentifier: @"RightMenuViewController"];
     
-    [SlideNavigationController sharedInstance].rightMenu = rightMenu;
+    
+
     [SlideNavigationController sharedInstance].leftMenu = leftMenu;
     [SlideNavigationController sharedInstance].menuRevealAnimationDuration = .18;
     
-    // Creating a custom bar button for right menu
-    UIButton *_button  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-    [_button setImage:[UIImage imageNamed:@"menu-icon.jpg"] forState:UIControlStateNormal];
-    [_button addTarget:[SlideNavigationController sharedInstance] action:@selector(toggleRightMenu) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *_rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_button];
-    [SlideNavigationController sharedInstance].rightBarButtonItem = _rightBarButtonItem;
+
     
     UIButton *_buttonL  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
     [_buttonL setImage:[UIImage imageNamed:@"menu-icon.jpg"] forState:UIControlStateNormal];

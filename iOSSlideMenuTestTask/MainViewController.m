@@ -19,10 +19,6 @@
     return YES;
 }
 
-- (BOOL)slideNavigationControllerShouldDisplayRightMenu
-{
-    return YES;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
