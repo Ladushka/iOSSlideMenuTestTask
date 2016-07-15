@@ -18,23 +18,14 @@
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     self.slideOutAnimationEnabled = YES;
-    
     return [super initWithCoder:aDecoder];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
- 
-    
-    self.tableView.separatorColor = [UIColor lightGrayColor];
-    
-    UIImageView *_imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"leftMenu.jpg"]];
-    self.tableView.backgroundView = _imageView;
-}
+    self.tableView.separatorColor = [UIColor lightGrayColor];    
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -47,7 +38,6 @@
     return 4;
 }
 
-
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 20)];
@@ -55,15 +45,6 @@
     return view;
 }
 
-
-/*- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSString *cellIdentifier=[_maps objectAtIndex:indexPath.row];
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    
-    return cell;
-}*/
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"leftMenu"];
     
@@ -116,15 +97,12 @@
             
         case 3:
             vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"HybridViewController"];
-            break;
-       
+            break;       
     }
     
     [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc
                                                              withSlideOutAnimation:self.slideOutAnimationEnabled
                                                                      andCompletion:nil];
 }
-
-
 
 @end

@@ -8,8 +8,6 @@
 
 #import "MapViewController.h"
 
-
-
 @interface MapViewController (){
     GMSMapView *mapView_;
 }
@@ -21,7 +19,6 @@
 {
     return YES;
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -15,7 +15,6 @@
 		842285FE1D3830BD00E88C36 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842285FD1D3830BD00E88C36 /* LeftMenuViewController.m */; };
 		842286041D38310E00E88C36 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842286031D38310E00E88C36 /* MapViewController.m */; };
 		842286091D3837EF00E88C36 /* animation.png in Resources */ = {isa = PBXBuildFile; fileRef = 842286051D3837EF00E88C36 /* animation.png */; };
-		8422860B1D3837EF00E88C36 /* leftMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842286071D3837EF00E88C36 /* leftMenu.jpg */; };
 		84658F111D38EDE4004EF3BB /* ShemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84658F101D38EDE4004EF3BB /* ShemeViewController.m */; };
 		84658F141D38EE93004EF3BB /* HybridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84658F131D38EE93004EF3BB /* HybridViewController.m */; };
 		84B911811D38A659007FC071 /* menu-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84B911801D38A659007FC071 /* menu-icon.jpg */; };
@@ -38,7 +37,6 @@
 		842286021D38310E00E88C36 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		842286031D38310E00E88C36 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		842286051D3837EF00E88C36 /* animation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = animation.png; path = "../../../Downloads/iOS-Slide-Menu-master/SlideMenu/Images/animation.png"; sourceTree = "<group>"; };
-		842286071D3837EF00E88C36 /* leftMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = leftMenu.jpg; path = "../../../Downloads/iOS-Slide-Menu-master/SlideMenu/Images/leftMenu.jpg"; sourceTree = "<group>"; };
 		84658F0F1D38EDE4004EF3BB /* ShemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShemeViewController.h; sourceTree = "<group>"; };
 		84658F101D38EDE4004EF3BB /* ShemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShemeViewController.m; sourceTree = "<group>"; };
 		84658F121D38EE93004EF3BB /* HybridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HybridViewController.h; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 			children = (
 				84B911801D38A659007FC071 /* menu-icon.jpg */,
 				842286051D3837EF00E88C36 /* animation.png */,
-				842286071D3837EF00E88C36 /* leftMenu.jpg */,
 				842285D41D380EE100E88C36 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -196,7 +193,6 @@
 				842285E31D380EE100E88C36 /* LaunchScreen.storyboard in Resources */,
 				842285E01D380EE100E88C36 /* Assets.xcassets in Resources */,
 				842286091D3837EF00E88C36 /* animation.png in Resources */,
-				8422860B1D3837EF00E88C36 /* leftMenu.jpg in Resources */,
 				842285DE1D380EE100E88C36 /* Main.storyboard in Resources */,
 				84B911811D38A659007FC071 /* menu-icon.jpg in Resources */,
 			);

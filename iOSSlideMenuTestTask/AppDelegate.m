@@ -19,24 +19,19 @@
     
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
                                                              bundle: nil];
-  
     
     LeftMenuViewController *leftMenu = (LeftMenuViewController*)[mainStoryboard
                                                                  instantiateViewControllerWithIdentifier: @"LeftMenuViewController"];
-    
-    
-    
 
     [SlideNavigationController sharedInstance].leftMenu = leftMenu;
     [SlideNavigationController sharedInstance].menuRevealAnimationDuration = .18;
     
-
+    UIButton *_button  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [_button setImage:[UIImage imageNamed:@"menu-icon.jpg"] forState:UIControlStateNormal];
+    [_button addTarget:[SlideNavigationController sharedInstance] action:@selector(toggleLeftMenu)
+      forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *_buttonL  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-    [_buttonL setImage:[UIImage imageNamed:@"menu-icon.jpg"] forState:UIControlStateNormal];
-    
-    [_buttonL addTarget:[SlideNavigationController sharedInstance] action:@selector(toggleLeftMenu) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *_leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_buttonL];
+    UIBarButtonItem *_leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_button];
     [SlideNavigationController sharedInstance].leftBarButtonItem = _leftBarButtonItem;
     
     [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidClose object:nil queue:nil usingBlock:^(NSNotification *note) {
